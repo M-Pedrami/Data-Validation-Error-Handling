@@ -1,13 +1,15 @@
-
+import {Route, Routes} from 'react-router-dom';
+import Tasks from './components/Tasks'
 import './App.css'
 
 function App() {
 
 
   return (
-    <>
-     <h1>Task Manager</h1>
-    </>
+    <Routes>  
+      <Route path="/" element={<Tasks/>} />
+      {/* <Route path="/tasks/create" element={<CreateTasks />} /> */}
+    </Routes>
   )
 }
 
